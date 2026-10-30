@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Illustration of a vegetarian thali">
+  <!-- Illustrative fallback artwork, shown only when a food photograph cannot load. -->
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="75%">
+      <stop offset="0" stop-color="#FFF4DC"/><stop offset="1" stop-color="#F3E2BE"/>
+    </radialGradient>
+    <radialGradient id="steel" cx="42%" cy="38%" r="70%">
+      <stop offset="0" stop-color="#FBFBFA"/><stop offset=".55" stop-color="#D9DCDD"/><stop offset=".85" stop-color="#B9BEC1"/><stop offset="1" stop-color="#9EA4A8"/>
+    </radialGradient>
+    <radialGradient id="steelIn" cx="45%" cy="40%" r="70%">
+      <stop offset="0" stop-color="#F2F3F3"/><stop offset="1" stop-color="#C8CCCE"/>
+    </radialGradient>
+    <radialGradient id="dal" cx="45%" cy="40%" r="65%">
+      <stop offset="0" stop-color="#FFD34D"/><stop offset="1" stop-color="#E9A31B"/>
+    </radialGradient>
+    <radialGradient id="kadhi" cx="45%" cy="40%" r="65%">
+      <stop offset="0" stop-color="#FFE9A0"/><stop offset="1" stop-color="#F1C24E"/>
+    </radialGradient>
+    <radialGradient id="sabzi" cx="45%" cy="40%" r="65%">
+      <stop offset="0" stop-color="#D9822B"/><stop offset="1" stop-color="#9C4A12"/>
+    </radialGradient>
+    <radialGradient id="roti" cx="40%" cy="38%" r="70%">
+      <stop offset="0" stop-color="#F3D9A4"/><stop offset=".7" stop-color="#DDB06A"/><stop offset="1" stop-color="#C38E48"/>
+    </radialGradient>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#5b3a10" flood-opacity=".22"/></filter>
+    <filter id="sh2" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#3b2a10" flood-opacity=".25"/></filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <g opacity=".5" fill="#14532D">
+    <path d="M60 520c40-60 110-70 150-40-50 10-90 30-150 40z"/>
+    <path d="M700 90c-30 50-90 70-140 50 40-20 80-40 140-50z"/>
+  </g>
+  <!-- plate -->
+  <circle cx="400" cy="300" r="250" fill="url(#steel)" filter="url(#sh)"/>
+  <circle cx="400" cy="300" r="222" fill="url(#steelIn)"/>
+  <circle cx="400" cy="300" r="222" fill="none" stroke="#fff" stroke-opacity=".7" stroke-width="2"/>
+  <!-- rotis -->
+  <g filter="url(#sh2)">
+    <circle cx="300" cy="220" r="92" fill="url(#roti)"/>
+    <circle cx="288" cy="232" r="92" fill="url(#roti)"/>
+    <circle cx="278" cy="244" r="92" fill="url(#roti)"/>
+    <g fill="#9A6428" opacity=".55">
+      <ellipse cx="250" cy="220" rx="9" ry="6"/><ellipse cx="300" cy="200" rx="7" ry="5"/><ellipse cx="320" cy="260" rx="10" ry="6"/>
+      <ellipse cx="240" cy="280" rx="8" ry="5"/><ellipse cx="285" cy="300" rx="6" ry="4"/><ellipse cx="335" cy="225" rx="5" ry="4"/>
+      <ellipse cx="215" cy="245" rx="5" ry="4"/><ellipse cx="270" cy="185" rx="6" ry="4"/>
+    </g>
+  </g>
+  <!-- rice -->
+  <g filter="url(#sh2)">
+    <ellipse cx="420" cy="420" rx="95" ry="62" fill="#FFFFFF"/>
+    <ellipse cx="420" cy="412" rx="80" ry="48" fill="#FBFAF5"/>
+    <g fill="#E9E6DA">
+      <ellipse cx="380" cy="400" rx="7" ry="2.4" transform="rotate(-20 380 400)"/><ellipse cx="410" cy="390" rx="7" ry="2.4" transform="rotate(30 410 390)"/>
+      <ellipse cx="445" cy="405" rx="7" ry="2.4" transform="rotate(-40 445 405)"/><ellipse cx="400" cy="430" rx="7" ry="2.4" transform="rotate(10 400 430)"/>
+      <ellipse cx="460" cy="430" rx="7" ry="2.4" transform="rotate(50 460 430)"/><ellipse cx="365" cy="425" rx="7" ry="2.4" transform="rotate(-60 365 425)"/>
+      <ellipse cx="430" cy="440" rx="7" ry="2.4" transform="rotate(-10 430 440)"/>
+    </g>
+    <g fill="#2E7D32"><path d="M425 395c8-10 20-10 24-2-10 0-16 2-24 2z"/><path d="M425 395c-2-12 6-20 14-18-6 6-10 10-14 18z"/></g>
+  </g>
+  <!-- katori: sabzi -->
+  <g filter="url(#sh2)">
+    <circle cx="505" cy="185" r="70" fill="#C4C9CC"/><circle cx="505" cy="185" r="60" fill="url(#sabzi)"/>
+    <g fill="#F2C14E"><rect x="475" y="160" width="18" height="16" rx="4" transform="rotate(12 484 168)"/><rect x="510" y="200" width="18" height="16" rx="4" transform="rotate(-18 519 208)"/><rect x="520" y="150" width="15" height="14" rx="4"/></g>
+    <g fill="#5D3A1A"><circle cx="500" cy="190" r="6"/><circle cx="485" cy="205" r="5"/><circle cx="530" cy="180" r="5"/><circle cx="505" cy="160" r="4"/></g>
+    <g fill="#6DBE45"><circle cx="480" cy="185" r="4"/><circle cx="540" cy="200" r="3.5"/><circle cx="520" cy="215" r="3.5"/></g>
+  </g>
+  <!-- katori: dal -->
+  <g filter="url(#sh2)">
+    <circle cx="590" cy="320" r="62" fill="#C4C9CC"/><circle cx="590" cy="320" r="52" fill="url(#dal)"/>
+    <g fill="#B5651D" opacity=".7"><circle cx="575" cy="305" r="3"/><circle cx="600" cy="330" r="3"/><circle cx="585" cy="338" r="2.5"/><circle cx="610" cy="305" r="2.5"/></g>
+    <path d="M565 322c10-6 18-4 22 4-9-1-15-2-22-4z" fill="#C62828"/>
+    <g fill="#2E7D32"><circle cx="598" cy="315" r="4"/><circle cx="606" cy="320" r="3"/></g>
+  </g>
+  <!-- katori: kadhi -->
+  <g filter="url(#sh2)">
+    <circle cx="300" cy="420" r="56" fill="#C4C9CC"/><circle cx="300" cy="420" r="47" fill="url(#kadhi)"/>
+    <g fill="#E3A33A"><circle cx="288" cy="410" r="10"/><circle cx="312" cy="428" r="9"/><circle cx="296" cy="436" r="7"/></g>
+  </g>
+  <!-- salad -->
+  <g filter="url(#sh2)">
+    <circle cx="545" cy="440" r="22" fill="#B7E08A" stroke="#4E8B2C" stroke-width="5"/>
+    <circle cx="575" cy="415" r="20" fill="#E53935"/><path d="M575 400v30M560 415h30" stroke="#FFCDD2" stroke-width="3"/>
+    <circle cx="520" cy="470" r="18" fill="none" stroke="#E1BEE7" stroke-width="5"/>
+    <path d="M560 470c18-6 30-2 36 8-14 2-26 0-36-8z" fill="#43A047"/>
+  </g>
+  <!-- pickle -->
+  <g filter="url(#sh2)">
+    <circle cx="410" cy="170" r="30" fill="#C4C9CC"/><circle cx="410" cy="170" r="24" fill="#B23A1A"/>
+    <g fill="#F57C00"><circle cx="402" cy="165" r="5"/><circle cx="417" cy="176" r="4"/></g>
+  </g>
+</svg>
