@@ -265,7 +265,6 @@
         '<figure class="menu-card__media">' +
           '<img class="menu-card__img" alt="" width="900" height="700" sizes="(max-width: 900px) 92vw, 560px" decoding="async">' +
           '<span class="slot-badge">' + icon(state.slot === 'morning' ? 'sunrise' : 'moon-stars') + esc(slotLabel(state.slot)) + '</span>' +
-          '<figcaption class="photo-note">' + esc(t('photo.note')) + '</figcaption>' +
         '</figure>' +
         '<div class="menu-card__body">' +
           '<h3 class="menu-card__name">' + esc(L(meal.name)) + '</h3>' +
@@ -324,7 +323,6 @@
           '<div class="card__media">' +
             '<img class="card__img" alt="" width="800" height="600" loading="lazy" decoding="async" sizes="(max-width: 640px) 92vw, (max-width: 1080px) 46vw, 380px">' +
             '<span class="card__cat">' + esc(catLabel(m)) + '</span>' +
-            '<span class="photo-note">' + esc(t('photo.note')) + '</span>' +
           '</div>' +
           '<div class="card__body">' +
             '<div class="card__top">' +
@@ -365,12 +363,14 @@
     sel.value = v;
   }
   function renderCredits() {
+    var el = $('#photoCredits');
+    if (!el) return;
     var seen = {}, parts = [];
     Object.keys(D.IMAGES).forEach(function (k) {
       var c = D.IMAGES[k]; if (!c || !c.page || seen[c.page]) return; seen[c.page] = 1;
       parts.push('<a href="' + esc(c.page) + '" target="_blank" rel="noopener">' + esc(c.credit) + '</a>');
     });
-    $('#photoCredits').innerHTML = parts.join(', ');
+    el.innerHTML = parts.join(', ');
   }
 
   /* --------------------------------------------------- layers (modal/drawer) */
@@ -442,7 +442,6 @@
     c.innerHTML =
       '<div class="meal">' +
         '<figure class="meal__media"><img class="meal__img" alt="" width="900" height="700" sizes="(max-width: 760px) 100vw, 460px" decoding="async">' +
-          '<figcaption class="photo-note">' + esc(t('photo.note')) + '</figcaption>' +
           '<span class="card__cat">' + esc(catLabel(m)) + '</span></figure>' +
         '<div class="meal__body">' +
           '<p class="meal__slot">' + icon(m.slot === 'morning' ? 'sunrise' : 'moon-stars') + esc(slotLabel(m.slot)) + ' · <span class="demo-pill demo-pill--sm">' + esc(t('menu.demo')) + '</span></p>' +

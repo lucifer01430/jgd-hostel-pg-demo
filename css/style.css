@@ -265,11 +265,7 @@ html[lang="hi"] .kicker { letter-spacing: .02em; font-size: .95rem; }
   background: #FFF1D6; color: #8A4B06; border: 1px solid rgba(180,83,9,.25); letter-spacing: .02em; vertical-align: 2px; white-space: nowrap;
 }
 .demo-pill--sm { font-size: .72rem; padding: 0 8px; }
-.photo-note {
-  position: absolute; right: 10px; bottom: 10px; z-index: 2; pointer-events: none;
-  font-size: .72rem; line-height: 1; padding: 6px 9px; border-radius: 999px;
-  background: rgba(6,38,25,.62); color: rgba(255,248,234,.95); -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px);
-}
+.photo-note { display: none !important; }
 .photo-note--dark { right: 16px; bottom: 16px; }
 .price { display: inline-flex; align-items: baseline; gap: 4px; white-space: nowrap; }
 .price__amt { font-family: var(--f-display); font-size: 1.6rem; color: var(--green-900); line-height: 1; }
